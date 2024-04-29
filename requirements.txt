@@ -1,0 +1,5 @@
+future~=1.0.0
+customtkinter~=5.2.2
+Markdown~=3.6
+tkhtmlview~=0.3.0
+netmiko~=4.3.0

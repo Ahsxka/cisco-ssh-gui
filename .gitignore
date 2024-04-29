@@ -1,0 +1,7 @@
+# don't push any confedential data on accident
+# this would be for any csv or excel file
+*.csv
+*.log
+wr.txt
+test.py
+cisco_ssh.py
