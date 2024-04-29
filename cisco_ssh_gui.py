@@ -5,7 +5,7 @@ import customtkinter as ctk
 import markdown
 from customtkinter import CTkOptionMenu
 from tkhtmlview import HTMLLabel
-import cisco_ssh
+import cisco_ssh_py.cisco_ssh
 import tkinter as tk
 from tkinter import filedialog
 
@@ -14,8 +14,8 @@ ctk.set_default_color_theme("green")
 
 commands_map = {
     "1": "show running-config",
-    "2": "show ip.csv route",
-    "3": "show ip.csv interface brief",
+    "2": "show ip route",
+    "3": "show ip interface brief",
     "4": "show interfaces",
     "5": "show version",
     "6": "show mac-address-table",
@@ -29,7 +29,7 @@ commands_map = {
 class title_frame(ctk.CTkFrame):
     def __init__(self, master=None, **kwargs):
         super().__init__(master, **kwargs)
-        title_label = ctk.CTkLabel(self, text="cisco-ssh-py", font=ctk.CTkFont(size=20, weight="bold"))
+        title_label = ctk.CTkLabel(self, text="Cisco SSH", font=ctk.CTkFont(size=20, weight="bold"))
         title_label.grid(padx=20, pady=20, sticky="ew")
         self.configure(fg_color="#3e9f76")
 
@@ -96,7 +96,7 @@ class left_frame(ctk.CTkScrollableFrame):
         global ip_list
         file_path = filedialog.askopenfilename()
         self.ip_file_path.set(file_path)
-        ip_list = cisco_ssh.read_file(self.ip_file_path.get())
+        ip_list = cisco_ssh_py.cisco_ssh.read_file(self.ip_file_path.get())
         current_settings_frame.update_host_count(currentSettingsFrame)
 
     def browse_password_file(self, currentSettingsFrame):
@@ -189,7 +189,7 @@ class right_frame(ctk.CTkFrame):
         global finalCommandSent
         file_path = filedialog.askopenfilename()
         self.command_file_path.set(file_path)
-        commands_list = cisco_ssh.read_file(self.command_file_path.get())
+        commands_list = cisco_ssh_py.cisco_ssh.read_file(self.command_file_path.get())
         finalCommandSent = commands_list
         currentSettingsFrame.update_command_count(config=True)
 
@@ -254,9 +254,9 @@ class run_script_frame(ctk.CTkFrame):
         self.stopButton.grid(row=2, column=0, padx=10, pady=10, sticky="sew")
 
     def on_start_button_clicked(self):
-        self.call = threading.Thread(target=lambda: cisco_ssh.inicio_gui(ip_list, user_pass_file, finalCommandSent,
+        self.call = threading.Thread(target=lambda: cisco_ssh_py.cisco_ssh.inicio_gui(ip_list, user_pass_file, finalCommandSent,
                                                                            verbose, mode, export_folder), daemon=True,
-                                     name="cisco-ssh-py")
+                                     name="cisco_ssh_py")
         self.call.start()
 
         self.startButton.configure(state="disabled", text="Running...")
@@ -374,7 +374,7 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("cisco-ssh-py")
+        self.title("Cisco SSH")
         self.geometry(f"{1100}x{580}")
 
         self.grid_columnconfigure(0, weight=1)
