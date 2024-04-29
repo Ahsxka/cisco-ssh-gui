@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c71a22ac-3472-4097-b7d6-a0132e9f8412" name="Changes" comment="Fixing submodules">
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cisco_ssh_py" beforeDir="false" afterPath="$PROJECT_DIR$/cisco_ssh_py" afterDir="false" />
     </list>
