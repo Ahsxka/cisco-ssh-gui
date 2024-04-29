@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71a22ac-3472-4097-b7d6-a0132e9f8412" name="Changes" comment="Create repository">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c71a22ac-3472-4097-b7d6-a0132e9f8412" name="Changes" comment="Fixing submodules">
+      <change afterPath="$PROJECT_DIR$/cisco_ssh_py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cisco_ssh_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/cisco_ssh_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714380181042</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create repository">
+      <option name="closed" value="true" />
+      <created>1714380704972</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714380704972</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixing submodules">
+      <option name="closed" value="true" />
+      <created>1714382308249</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714382308249</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create repository" />
+    <MESSAGE value="Fixing submodules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing submodules" />
   </component>
 </project>
