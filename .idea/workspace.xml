@@ -35,24 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.cisco-ssh.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cisco_ssh.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cisco_ssh_gui.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ctk_threads.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gui-tabs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gui_md_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.integration.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/python_automatization/ssh-gui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.cisco-ssh.executor": "Run",
+    "Python.cisco_ssh.executor": "Run",
+    "Python.cisco_ssh_gui.executor": "Run",
+    "Python.ctk_threads.executor": "Run",
+    "Python.gui-tabs.executor": "Run",
+    "Python.gui.executor": "Run",
+    "Python.gui_md_test.executor": "Run",
+    "Python.integration.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test2.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/python_automatization/ssh-gui",
+    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\python_automatization\ssh-gui" />
@@ -82,15 +83,50 @@
       <option name="project" value="LOCAL" />
       <updated>1714380073738</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create repository">
+      <option name="closed" value="true" />
+      <created>1714380181042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714380181042</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
