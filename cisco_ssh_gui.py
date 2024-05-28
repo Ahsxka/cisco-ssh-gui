@@ -254,9 +254,10 @@ class run_script_frame(ctk.CTkFrame):
         self.stopButton.grid(row=2, column=0, padx=10, pady=10, sticky="sew")
 
     def on_start_button_clicked(self):
-        self.call = threading.Thread(target=lambda: cisco_ssh_py.cisco_ssh.inicio_gui(ip_list, user_pass_file, finalCommandSent,
-                                                                           verbose, mode, export_folder), daemon=True,
-                                     name="cisco_ssh_py")
+        self.call = threading.Thread(
+            target=lambda: cisco_ssh_py.cisco_ssh.inicio_gui(ip_list, user_pass_file, finalCommandSent,
+                                                             verbose, mode, export_folder), daemon=True,
+            name="cisco_ssh_py")
         self.call.start()
 
         self.startButton.configure(state="disabled", text="Running...")
@@ -380,11 +381,11 @@ class App(ctk.CTk):
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(1, weight=1)
 
-        self.title = title_frame()
-        self.title.grid(row=0, column=0, pady=20,)
+        self.title_text = title_frame()
+        self.title_text.grid(row=0, column=0, pady=20, )
 
         self.tab_view = MyTabView(master=self)  # , fg_color="#242424")
-        self.tab_view.grid(row=1, column=0, padx=20,  sticky="nsew")
+        self.tab_view.grid(row=1, column=0, padx=20, sticky="nsew")
 
 
 ip_list = []
