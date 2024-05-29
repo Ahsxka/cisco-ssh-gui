@@ -1,4 +1,6 @@
-# Cisco IOS Command Automation Script
+![Ahsxka-cisco-ssh-gui](https://github.com/Ahsxka/cisco-ssh-gui/assets/162576190/2eabbe83-ac70-4d1c-bb51-40654eec8a70)
+
+# Cisco IOS SSH automation
 
 This Python script automates the execution of commands on Cisco IOS devices using Netmiko. It is the GUI on top of the [cisco-ssh-py](https://github.com/Ahsxka/cisco-ssh-py) project. To use this GUI, first clone the 
 
